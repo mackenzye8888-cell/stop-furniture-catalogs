@@ -328,6 +328,23 @@
   margin: 15px auto;
   border-radius: 15px;
 }
+
+    /* Best-selling mattresses */
+    .mattresses-section { margin-top: 50px; text-align: center; scroll-margin-top: 20px; }
+    .mattresses-section h2 { font-size: 32px; color: #173763; margin-bottom: 8px; }
+    .mattresses-section > p { color: #657185; margin-bottom: 25px; }
+    .mattress-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; text-align: left; }
+    .mattress-card { background: white; border-radius: 18px; overflow: hidden; box-shadow: 0 5px 20px #00000012; display: flex; flex-direction: column; }
+    .mattress-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; background: #e5e9f0; }
+    .mattress-details { padding: 18px; display: flex; flex-direction: column; flex: 1; }
+    .mattress-details h3 { font-size: 21px; color: #173763; margin: 0 0 8px; }
+    .mattress-price { color: #d91e2d; font-weight: 900; font-size: 21px; margin: 0 0 10px; }
+    .mattress-sizes { margin: 0 0 18px; padding: 0; list-style: none; color: #465367; font-size: 14px; line-height: 1.9; }
+    .mattress-ask { display: block; margin-top: auto; text-align: center; text-decoration: none; color: white; background: #16a34a; padding: 12px; border-radius: 12px; font-weight: 800; }
+    .mattress-note { font-size: 12px; color: #657185; margin-top: 18px; }
+    @media (max-width: 850px) { .mattress-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 620px) { .mattress-grid { grid-template-columns: 1fr; } .mattresses-section h2 { font-size: 27px; } }
+
   </style>
 </head>
 
@@ -348,8 +365,8 @@
       Quality • Comfort • Great Prices
     </p>
 
-    <a href="#furniture" class="hero-button">
-      Shop Our Furniture ↓
+    <a href="#mattresses" class="hero-button">
+      Shop Best-Selling Mattresses ↓
     </a>
   </header>
 
@@ -395,6 +412,93 @@
         </a>
 
       </div>
+    </section>
+
+    <section class="mattresses-section" id="mattresses">
+      <h2>Best-Selling Mattresses 🛏️</h2>
+      <p>Find your perfect mattress. Ask us about availability and sizes.</p>
+      <div class="mattress-grid">
+        <article class="mattress-card">
+          <img src="images/standard-mattress.png" alt="Illustrative image of Standard Mattress" loading="lazy">
+          <div class="mattress-details">
+            <h3>Standard Mattress</h3>
+            <p class="mattress-price">From $99</p>
+            <ul class="mattress-sizes">
+              <li>Twin $99</li>
+              <li>Full $139</li>
+              <li>Queen $159</li>
+              <li>King $250</li>
+            </ul>
+            <a class="mattress-ask" href="https://wa.me/19735365173?text=Hello%21%20I%20am%20interested%20in%20the%20Standard%20Mattress.%20Can%20you%20confirm%20prices%20and%20availability%3F" target="_blank" rel="noopener noreferrer">Ask on WhatsApp ↗</a>
+          </div>
+        </article>
+        <article class="mattress-card">
+          <img src="images/purplepedic-mattress.png" alt="Illustrative image of Purplepedic with Gel" loading="lazy">
+          <div class="mattress-details">
+            <h3>Purplepedic with Gel</h3>
+            <p class="mattress-price">From $250</p>
+            <ul class="mattress-sizes">
+              <li>Twin $250</li>
+              <li>Full $300</li>
+              <li>Queen $350</li>
+              <li>King $450</li>
+            </ul>
+            <a class="mattress-ask" href="https://wa.me/19735365173?text=Hello%21%20I%20am%20interested%20in%20the%20Purplepedic%20with%20Gel.%20Can%20you%20confirm%20prices%20and%20availability%3F" target="_blank" rel="noopener noreferrer">Ask on WhatsApp ↗</a>
+          </div>
+        </article>
+        <article class="mattress-card">
+          <img src="images/beautyrest-mattress.png" alt="Illustrative image of Black Beautyrest" loading="lazy">
+          <div class="mattress-details">
+            <h3>Black Beautyrest</h3>
+            <p class="mattress-price">$599</p>
+            <ul class="mattress-sizes">
+              <li>Size: Ask for details</li>
+            </ul>
+            <a class="mattress-ask" href="https://wa.me/19735365173?text=Hello%21%20I%20am%20interested%20in%20the%20Black%20Beautyrest.%20Can%20you%20confirm%20prices%20and%20availability%3F" target="_blank" rel="noopener noreferrer">Ask on WhatsApp ↗</a>
+          </div>
+        </article>
+        <article class="mattress-card">
+          <img src="images/majestic-mattress.png" alt="Illustrative image of Majestic Mattress" loading="lazy">
+          <div class="mattress-details">
+            <h3>Majestic Mattress</h3>
+            <p class="mattress-price">From $250</p>
+            <ul class="mattress-sizes">
+              <li>Twin $250</li>
+              <li>Full $300</li>
+              <li>Queen $350</li>
+              <li>King $450</li>
+            </ul>
+            <a class="mattress-ask" href="https://wa.me/19735365173?text=Hello%21%20I%20am%20interested%20in%20the%20Majestic%20Mattress.%20Can%20you%20confirm%20prices%20and%20availability%3F" target="_blank" rel="noopener noreferrer">Ask on WhatsApp ↗</a>
+          </div>
+        </article>
+        <article class="mattress-card">
+          <img src="images/bamboo-mattress.png" alt="Illustrative image of Bamboo Quilted" loading="lazy">
+          <div class="mattress-details">
+            <h3>Bamboo Quilted</h3>
+            <p class="mattress-price">From $230</p>
+            <ul class="mattress-sizes">
+              <li>Twin $230</li>
+              <li>Full $250</li>
+              <li>Queen $280</li>
+            </ul>
+            <a class="mattress-ask" href="https://wa.me/19735365173?text=Hello%21%20I%20am%20interested%20in%20the%20Bamboo%20Quilted.%20Can%20you%20confirm%20prices%20and%20availability%3F" target="_blank" rel="noopener noreferrer">Ask on WhatsApp ↗</a>
+          </div>
+        </article>
+        <article class="mattress-card">
+          <img src="images/mattress-model-6.png" alt="Illustrative image of Mattress — Model to Confirm" loading="lazy">
+          <div class="mattress-details">
+            <h3>Mattress — Model to Confirm</h3>
+            <p class="mattress-price">From $299</p>
+            <ul class="mattress-sizes">
+              <li>Twin $299</li>
+              <li>Full $350</li>
+              <li>Queen $399</li>
+            </ul>
+            <a class="mattress-ask" href="https://wa.me/19735365173?text=Hello%21%20I%20am%20interested%20in%20the%20Mattress%20%E2%80%94%20Model%20to%20Confirm.%20Can%20you%20confirm%20prices%20and%20availability%3F" target="_blank" rel="noopener noreferrer">Ask on WhatsApp ↗</a>
+          </div>
+        </article>
+      </div>
+      <p class="mattress-note">Product images are illustrative recreations. Prices shown are from previous promotional materials; please confirm current prices, model details and availability before ordering. Bed bases shown are for display only.</p>
     </section>
 
     <section class="suppliers-section" id="suppliers">
